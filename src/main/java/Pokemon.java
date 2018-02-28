@@ -1,3 +1,5 @@
+//import java.util.Scanner;
+
 /**
  * Class that implements a Pokemon.
  * <p>
@@ -15,7 +17,10 @@
  * variables of these objects, and use objects of the same type to make our game.
  */
 public class Pokemon {
-
+    /** test. */
+    public final int maxPoints = 50;
+    /** tee. */
+    public boolean attacklevelset = false;
     /**
      * We now have 3 more sophisticated Pokemon types
      * that we should differentiate between.

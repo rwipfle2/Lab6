@@ -103,6 +103,44 @@ public class Colosseum {
      *         <p>
      */
     public static Pokemon buildPokemon() {
+
+        System.out.println("buildPokemon has started");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Select from the following types of Pokemon");
+        int input = sc.nextInt();
+        while (input != 1 && input != 2 && input != 3) {
+            System.out.println("select 1, 2, or 3 idiot");
+        }
+        if (input == 1) {
+            FirePokemon();
+        } else if (input == 2) {
+
+        } else if (input == 3) {
+            WaterPokemon;
+        } else {
+
+        }
+        System.out.println("set hit points");
+        Scanner sc = new Scanner(System.in);
+        int test = sc.nextInt();
+        while (test < 1 || test > MAX_HIT_POINTS) {
+            System.out.println("hit must be between and 1 and 50");
+        }
+        firstPokemon.setHitPoints(test);
+        System.out.println("set attack points");
+        test = sc.nextInt();
+        while (test < 1 || test > MAX_HIT_POINTS) {
+            System.out.println("attack must be between and 1 and 50");
+        }
+        firstPokemon.setAttackLevel(test);
+        System.out.println("set defense levels");
+        test = sc.nextInt();
+        while (MAX_HIT_POINTS - firstPokemon.getAttackLevel() - test < 1
+                || MAX_HIT_POINTS - firstPokemon.getAttackLevel() - test > MAX_HIT_POINTS) {
+            System.out.println("defenese must be between and 1 and 50 when added to attack");
+        }
+        firstPokemon.setDefenseLevel(test);
         Pokemon returnPokemon = null;
         return returnPokemon;
     }
